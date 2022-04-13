@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuestionComponent } from './question.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import {MatButtonHarness} from '@angular/material/button/testing';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuestionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatInputModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
