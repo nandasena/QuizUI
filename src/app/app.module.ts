@@ -12,6 +12,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule} from '@angular/material/card';
+import { ApiService } from './api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { MatCardModule} from '@angular/material/card';
     FormsModule,
     MatInputModule,
     MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
